@@ -2,8 +2,9 @@
   "name": "api-movies-node",
   "version": "1.0.0",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "start": "node app.js",
+    "start": "node --watch server-mysql.js",
     "dev": "node --watch app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,9 +15,15 @@
   "dependencies": {
     "cors": "2.8.5",
     "express": "4.19.2",
+    "mysql2": "^3.10.0",
     "zod": "3.23.8"
   },
   "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.2.0",
     "standard": "^17.1.0"
   }
 }
